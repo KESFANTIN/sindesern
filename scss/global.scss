@@ -1,0 +1,67 @@
+@import "plugins";
+
+html {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: .8em;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: $branco;
+    background: $azul;
+}
+
+.header-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+    .nav-top {
+        display: flex;
+        flex-basis: auto;
+        align-items: center;
+    }
+
+    .social {
+        display: flex;
+        flex: 1;
+        margin-left: 10px;
+    }
+
+    ul {
+        display: flex;
+        li {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .8em;
+            margin: 0 10px 0 0;
+
+            a {
+            color: $cinza;
+            text-decoration: none;
+            
+            &:hover {
+                color: $azul;
+                border-bottom: 2px solid $azul;
+            }
+            }
+        }
+    }
+}
+
+
+.container-banner-home {
+    display: grid;
+
+    img {
+        max-width: 1200px;
+        width: 100%;
+        max-height: 450px;
+        height: auto;
+    }
+}
