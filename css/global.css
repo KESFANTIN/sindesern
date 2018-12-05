@@ -60,19 +60,25 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0; }
+  margin: 10px; }
+  .header-index h1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
   .header-index .nav-top {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
   .header-index .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -80,19 +86,42 @@ html {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    margin-left: 10px; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .header-index .social a {
+      color: #0058A6;
+      margin: 0 0 0 10px; }
+      .header-index .social a:hover {
+        color: #002c53; }
   .header-index ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     .header-index ul li {
       text-decoration: none;
       text-transform: uppercase;
-      font-size: .8em;
-      margin: 0 10px 0 0; }
+      font-size: .9em; }
       .header-index ul li a {
         color: #666666;
-        text-decoration: none; }
+        text-decoration: none;
+        padding: 10px 0;
+        margin: 0 0 0 10px; }
         .header-index ul li a:hover {
           color: #0058A6;
           border-bottom: 2px solid #0058A6; }
